@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <td class="p-2">${p.name}</td>
         <td class="p-2">${p.email || "-"}</td>
         <td class="p-2">${p.phone || "-"}</td>
-        <td class="p-2">${p.gender === 0 ? "Male" : "Female"}</td>
+        <td class="p-2">${p.gender || "-"}</td>
         <td class="p-2">${p.age || "-"}</td>
         <td class="p-2">${p.address || "-"}</td>
         <td class="p-2">

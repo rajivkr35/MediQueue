@@ -25,3 +25,5 @@ uvicorn==0.35.0
 email-validator
 joblib
 scikit-learn==1.4.2
+numpy==1.26.4
+pandas==2.2.2

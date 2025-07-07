@@ -5,9 +5,9 @@ from passlib.context import CryptContext
 from datetime import datetime, timedelta, timezone
 from jose import jwt, JWTError
 from dotenv import load_dotenv
-from backend.database import users_collection
-from backend.models import UserRegister, UserLogin
-from backend.auth_utils import verify_token
+from database import users_collection
+from models import UserRegister, UserLogin
+from auth_utils import verify_token
 import os
 
 # 📦 Load environment variables

@@ -1,10 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.openapi.utils import get_openapi  # 🔒 for custom docs
-from backend.auth import router as auth_router
-from backend.routers.queue import router as queue_router
-from backend.routers.predict import router as predict_router
-from backend.routers import admin
+from auth import router as auth_router
+from routers.queue import router as queue_router
+from routers.predict import router as predict_router
+from routers import admin
 
 app = FastAPI()
 

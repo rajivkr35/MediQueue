@@ -11,7 +11,7 @@ app = FastAPI()
 # CORS for frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # ✅ Your frontend origin
+    allow_origins=["https://extraordinary-gumption-c37f76.netlify.app"],  # ✅ Your frontend origin
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

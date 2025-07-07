@@ -1,8 +1,8 @@
 # backend/routers/queue.py
 
 from fastapi import APIRouter, Depends, HTTPException
-from backend.auth_utils import verify_token
-from backend.database import db
+from auth_utils import verify_token
+from database import db
 from bson import ObjectId
 
 router = APIRouter()

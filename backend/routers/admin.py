@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Header, HTTPException
-from backend.auth_utils import verify_token
-from backend.database import users_collection
+from auth_utils import verify_token
+from database import users_collection
 from bson import ObjectId
 
 router = APIRouter(prefix="/admin")

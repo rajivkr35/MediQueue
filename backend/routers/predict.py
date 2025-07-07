@@ -2,8 +2,8 @@
 
 from fastapi import APIRouter, Depends
 from pydantic import BaseModel
-from backend.auth_utils import verify_token
-from backend.ml import predict_wait_time
+from auth_utils import verify_token
+from ml import predict_wait_time
 
 router = APIRouter()
 

@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://rajivkr035:rajivdb1234@mediqueue.fidlmim.mongodb.net/mediqueue?retryWrites=true&w=majority&appName=MediQueue")
+MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://rajivkr035:<db_password>@mediqueue.fidlmim.mongodb.net/?retryWrites=true&w=majority&appName=MediQueue")
 client = MongoClient(MONGO_URI)
 
 db = client["queue_system"]

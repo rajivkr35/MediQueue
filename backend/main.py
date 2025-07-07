@@ -52,6 +52,11 @@ def custom_openapi():
 
 app.openapi = custom_openapi
 
+@app.get("/")
+def read_root():
+    return {"message": "🚀 MediQueue backend is live!"}
+
+
 # uvicorn backend.main:app --reload
 
 print("🚀 Allowed origins:", ["http://127.0.0.1:3000"])

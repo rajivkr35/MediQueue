@@ -7,7 +7,7 @@ class UserRegister(BaseModel):
     name: str
     email: EmailStr
     password: str
-    phone: str
+    phone: Optional[str] = None  # 👈 Make it optional
     role: Literal["patient", "admin"]
     
     # Patient-only fields
